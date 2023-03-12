@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+</head>
+<style src="basic.css">
+    #Header{
+   background-color:red;
+   text-align: center;
+   width:200px;
+   
+}
+#calculator{
+    background-color:aqua;
+    width:350px;
+    height:200px;
+    padding-top:20px;
+    position:relative;
+    left:30px;
+}
+
+</style>
+<body>
+    <h1 id="Header">Calculator</h1>
+    <section id="calculator">
+        <label for="num1">Enter a 1st number</label>
+        <input type="number"id="num1"><br><br>
+        <label for="num2">Enter 2nd number</label>
+        <input type="number" id="num2"><br><br>
+        <label for="opertion">Choose a oparation</label>
+        <select id="operation">
+            <option value="addition">Addition</option>
+            <option value="substraction">substraction</option>
+            <option value="multiplication">multiplication</option>
+            <option value="division">division</option>
+        </select><br><br>
+        <button type="button" onclick="calculator()" style="margin-left:50px;">calculate</button>
+
+    </section> 
+    <script src="basic.js" type="text/javascript">
+
+    </script>
+    <p style="font-size: 30px;margin-left:30px; background-color:greenyellow;">The result is: <span id="result"></span></p>
+</body>
+</html>
